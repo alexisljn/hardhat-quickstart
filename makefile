@@ -1,4 +1,4 @@
-.PHONY: setup run bash compile test console deploy
+.PHONY: setup run bash compile test console deploy coverage
 
 NETWORK="localhost"
 
@@ -27,3 +27,6 @@ endif
 
 console:
 	docker compose exec hardhat npx hardhat console --network $(NETWORK)
+
+coverage:
+	docker compose exec hardhat npx hardhat coverage --network hardhat
