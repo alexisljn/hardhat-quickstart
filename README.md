@@ -22,6 +22,9 @@ Simple and quick hardhat project for development.
 
 `make test`
 
+### Coverage
+`make coverage`
+
 ### Running scripts
 *Read makefile to consult options*
 
