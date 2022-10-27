@@ -3,7 +3,7 @@
 NETWORK="localhost"
 
 setup:
-	docker compose run hardhat npm install -D --verbose @nomicfoundation/hardhat-toolbox dotenv
+	docker compose run hardhat npm install -D --verbose @nomicfoundation/hardhat-toolbox dotenv solidity-coverage
 
 bash:
 	docker compose exec hardhat bash
